@@ -1,0 +1,15 @@
+{
+  "name": "ai-season-demos",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "01": "node 01_basic_call.js",
+    "02": "node 02_streaming.js",
+    "03": "node 03_chat_history.js",
+    "04": "node 04_parameters.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.67.0"
+  }
+}
