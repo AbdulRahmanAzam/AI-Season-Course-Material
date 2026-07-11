@@ -1,0 +1,23 @@
+{
+  "shop_name": "MEGA MART",
+  "date": "10-07-2026",
+  "items": [
+    {
+      "name": "Milk",
+      "price": 350
+    },
+    {
+      "name": "Bread",
+      "price": 200
+    },
+    {
+      "name": "Eggs (12)",
+      "price": 425
+    },
+    {
+      "name": "Rice lkg",
+      "price": 300
+    }
+  ],
+  "total": 1275
+}

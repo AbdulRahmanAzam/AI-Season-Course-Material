@@ -1,0 +1,12 @@
+ChatCompletion(id='chatcmpl-cab9df57-4b24-4f40-a312-d6a361839736', 
+
+choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='2\u202f+\u202f2 equals\u202f4.', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='User asks: "What is 2 + 2? Answer in one sentence." So answer: "2 + 2 equals 4." Provide one sentence.'))
+], 
+
+created=1783347153, model='openai-gpt-oss-120b', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=52, prompt_tokens=80, total_tokens=132, completion_tokens_details=None, prompt_tokens_details=None, cache_created_input_tokens=0, cache_creation={'ephemeral_1h_input_tokens': 0, 'ephemeral_5m_input_tokens': 0
+}, 
+cache_read_input_tokens=0, speed=None))
+
+
+
+response.choices[0].message.content

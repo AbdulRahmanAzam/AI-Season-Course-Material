@@ -1,0 +1,9 @@
+google-genai
+python-dotenv
+pillow
+numpy
+groq
+pytesseract
+opencv-python          # classic computer vision (03_video_understanding.py + sample video)
+SpeechRecognition      # optional: classic offline speech engine (02_audio_lm.py)
+pocketsphinx           # optional: the CMU Sphinx engine SpeechRecognition uses
