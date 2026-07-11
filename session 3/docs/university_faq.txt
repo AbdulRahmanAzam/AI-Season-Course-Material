@@ -1,0 +1,29 @@
+Riverside University — Student FAQ
+
+Admissions
+Q: What is the application deadline for fall semester?
+A: Fall applications are due by March 15. Late applications are reviewed if space remains.
+
+Q: Do you require standardized test scores?
+A: Test scores are optional for most undergraduate programs. Check your specific program page.
+
+Tuition and Financial Aid
+Q: What is the annual tuition for in-state students?
+A: In-state undergraduate tuition is $12,400 per year for the 2025–2026 academic year.
+
+Q: How do I apply for financial aid?
+A: Submit the FAFSA by February 1 and complete the university financial aid form in the student portal.
+
+Campus Life
+Q: Is on-campus housing guaranteed for freshmen?
+A: Yes, all first-year students who apply for housing by May 1 receive a room assignment.
+
+Q: What dining plans are available?
+A: Plans range from 10 meals per week to unlimited dining. Details are on the dining services website.
+
+Library and IT
+Q: How do I reset my student email password?
+A: Visit ithelp.riverside-university.example and click "Reset Password" or visit the IT help desk in the Student Center.
+
+Q: Can alumni access the library?
+A: Alumni may visit the library during public hours but do not receive borrowing privileges without an alumni membership.

@@ -1,0 +1,25 @@
+ACME Online Store — Refund Policy
+
+Last updated: January 2025
+
+1. Eligibility
+Customers may request a refund within 30 days of purchase for most physical and digital products.
+Items must be unused and in original packaging where applicable.
+
+2. Non-refundable items
+Gift cards, personalized products, and clearance items marked "final sale" are not eligible for refunds.
+
+3. How to request a refund
+Email support@acme-store.example with your order number and reason for the refund.
+Our team responds within 2 business days.
+
+4. Refund processing time
+Approved refunds are returned to the original payment method within 5–10 business days.
+Bank processing times may add extra days.
+
+5. Partial refunds
+If only part of an order is returned, you receive a partial refund for the returned items only.
+Shipping fees are non-refundable unless the return is due to our error.
+
+6. Contact
+For questions about this policy, contact support@acme-store.example or call 1-800-555-0199.
