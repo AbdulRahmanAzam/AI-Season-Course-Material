@@ -1,0 +1,11 @@
+# Secrets — never commit real API keys
+.env
+
+# WhatsApp login session — sensitive, works like a saved cookie
+auth_info_baileys/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

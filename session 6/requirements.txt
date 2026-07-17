@@ -1,0 +1,13 @@
+langchain
+langchain-groq
+langchain-community
+langchain-openai            # ChatOpenAI (raw-vs-langchain 04) -- also drives the DigitalOcean file
+langchain-google-genai      # ChatGoogleGenerativeAI (raw-vs-langchain 04)
+python-dotenv
+requests                    # raw HTTP calls (raw-vs-langchain 01-03)
+groq                        # raw Groq SDK (raw-vs-langchain 01)
+google-genai                # raw Gemini SDK (raw-vs-langchain 02)
+openai                      # raw OpenAI SDK, reused for DigitalOcean (raw-vs-langchain 03)
+langchain-huggingface     # local embeddings for RAG (06, 07) — free, no extra API key
+sentence-transformers     # the actual embedding model langchain-huggingface runs
+faiss-cpu                 # vector store for RAG (06, 07)
