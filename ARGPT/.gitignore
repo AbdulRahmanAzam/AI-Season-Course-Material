@@ -1,0 +1,13 @@
+# Trained models and tokenized data. Never commit these -- a checkpoint can be
+# hundreds of MB and train.bin is rebuilt from data3.py in seconds.
+out/
+*.pt
+*.bin
+
+__pycache__/
+.venv/
+
+/Content.txt
+Content.txt
+
+explanation.md

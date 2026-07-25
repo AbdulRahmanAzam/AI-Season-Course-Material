@@ -1,0 +1,16 @@
+# Session 9 — Agent-to-Agent (A2A) communication
+# Install everything:  pip install -r requirements.txt
+
+# --- Build A2A by hand (Files 01-09): a web server + an HTTP client ---
+fastapi
+uvicorn
+requests
+
+# --- Give the agents a real brain (Files 07-09): Groq LLM ---
+# (You can skip these and everything still runs in MOCK mode.)
+groq
+python-dotenv
+
+# --- The official A2A SDK (Files 10-11) ---
+a2a-sdk
+httpx

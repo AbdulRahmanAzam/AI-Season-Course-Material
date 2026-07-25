@@ -1,0 +1,16 @@
+# ARGPT — build an LLM from scratch
+# pip install -r requirements.txt
+
+torch          # the only deep learning library we use
+               # No NVIDIA GPU? This pulls a 2.3 GB CUDA build you cannot use.
+               # Save the download with:
+               #   pip install torch --index-url https://download.pytorch.org/whl/cpu
+               # Everything still works, training is just slower.
+
+numpy          # storing tokens on disk as train.bin / val.bin
+requests       # downloading datasets, and calling your deployed model
+
+modal          # renting a GPU by the second (files 7 and 8)
+
+# only needed for file 9, the LangChain demo. Session 6 already installed it.
+langchain-core
