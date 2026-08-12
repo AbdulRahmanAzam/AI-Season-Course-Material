@@ -1,0 +1,15 @@
+# Agent Talks 2 -- two A2A agents debating each other
+# Install everything:  pip install -r requirements.txt
+
+# --- the agents' brains ---
+langchain-groq
+
+# --- the orchestrator's loop (FILE 4 only) ---
+langgraph
+
+# --- reads your GROQ_API_KEY out of .env ---
+python-dotenv
+
+# NOTE: no fastapi / uvicorn / requests here on purpose. The agents run
+# in ONE process today. See the README for the 10 lines that turn each one
+# back into a real HTTP server like session 12 files 02/04/05.

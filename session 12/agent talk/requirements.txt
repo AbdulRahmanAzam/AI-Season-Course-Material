@@ -1,0 +1,11 @@
+# Agent Talk -- two agents debating each other
+# Install everything:  pip install -r requirements.txt
+
+# --- the LLM (FILE 1 and FILE 2) ---
+langchain-groq
+
+# --- the graph that runs the debate (FILE 2 only) ---
+langgraph
+
+# --- reads your GROQ_API_KEY out of .env ---
+python-dotenv

@@ -1,0 +1,66 @@
+# =============================================================================
+#  Repo-wide ignore rules for "09 AI Season"
+#
+#  This file sits at the repo root, so every rule here applies to EVERY session
+#  folder -- including new ones you add later. The per-session .gitignore files
+#  still work; this one is the safety net underneath them.
+# =============================================================================
+
+# ---------------------------------------------------------------- SECRETS
+# Never commit a real key. The "!" lines re-allow the placeholder templates,
+# which are safe and are what students copy from.
+.env
+.env.*
+*.env
+!.env.example
+!.env.*.example
+!*.env.example
+
+# Other shapes a credential can arrive in
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.npmrc
+secrets.json
+credentials.json
+service-account*.json
+client_secret*.json
+
+# WhatsApp login session -- works like a saved cookie, treat it as a password
+auth_info_baileys/
+
+# ---------------------------------------------------------------- DEPENDENCIES
+node_modules/
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------- PYTHON
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- MODELS / DATA
+# Checkpoints and tokenized binaries are rebuilt by the training scripts.
+*.pt
+*.bin
+*.safetensors
+out/
+
+# ---------------------------------------------------------------- RUN ARTIFACTS
+# Agent transcripts and exported leads can quote whatever the model saw.
+transcripts/
+output/
+logs/
+*.log
+
+# ---------------------------------------------------------------- EDITOR / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -14,10 +14,11 @@ There is no step 6. That is how every neural network on earth is trained.
 Run me:  python train5.py
 """
 
+import argparse
 import json
 import os
 import time
-from dataclasses import asdict
+from dataclasses import asdict, replace
 
 import torch
 
@@ -47,7 +48,7 @@ def estimate_loss(model, cfg, folder, device):
     return out
 
 
-def train(cfg):
+def train(cfg, sample_prompt="\n"):
     torch.manual_seed(1337)           # same run every time, so demos are repeatable
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"device: {device}")
@@ -88,7 +89,7 @@ def train(cfg):
 
             # WATCH IT LEARN. This is the best part of the whole session.
             # Noise -> letter soup -> word shapes -> names and line breaks.
-            sample = generate(model, tok, "\n", 120, device=device)
+            sample = generate(model, tok, sample_prompt, 120, device=device)
             print("  " + sample.replace("\n", "\n  "))
 
     # ---------- save everything needed to use this model later ----------
@@ -108,8 +109,20 @@ def train(cfg):
 
 
 if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--dataset", default="shakespeare",
+                   help="any folder under data/ holding train.bin + tokenizer.json")
+    p.add_argument("--iters", type=int, default=TINY.max_iters)
+    p.add_argument("--prompt", default="\n",
+                   help="seed for the live sample, e.g. --prompt \"User: \"")
+    args = p.parse_args()
+
+    # replace() makes a copy. Editing TINY in place would leak the change into
+    # every other file that imports it -- the kind of bug you find at 2am.
+    cfg = replace(TINY, dataset=args.dataset, max_iters=args.iters)
+
     # ---------- DEMO: train the small one on your own laptop ----------
-    train(TINY)
+    train(cfg, sample_prompt=args.prompt)
 
 # NOTE:
 # - Watch the two losses. Both falling = learning. Train falls but val rises =
